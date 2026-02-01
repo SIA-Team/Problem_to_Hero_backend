@@ -1,0 +1,30 @@
+# Problem to Hero Backend - Cursor Rules
+
+## 项目上下文
+- 这是一个基于Spring Boot 3.2.5和Spring Cloud 2023.0.1的微服务项目
+- 使用Java 21
+- 采用Maven多模块结构
+- 数据库使用MySQL 8.0+，ORM使用MyBatis-Plus 3.5.5
+- 连接池使用HikariCP 5.1.0
+
+## 代码规范
+- 遵循阿里巴巴Java开发手册
+- 使用Lombok简化代码
+- 使用MapStruct进行对象映射
+- 包命名：com.sia.{module}
+- 类名使用PascalCase，方法名使用camelCase
+
+## 模块结构
+- common模块：common-core、common-security、common-web、common-dbservice
+- gateway模块：api-gateway
+- services模块：user-service、content-service等业务服务
+
+## 开发约定
+- 所有接口返回统一格式Result<T>
+- 使用JWT进行认证
+- 支持第三方登录（Twitter/Facebook/Instagram）
+- DAO层配置统一在common-dbservice模块
+
+## 参考文档
+- 详细规范见 doc/开发规范.md
+- 模块结构见 doc/模块与目录结构定义.md
