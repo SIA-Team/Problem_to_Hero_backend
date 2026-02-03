@@ -1,6 +1,6 @@
 package com.sia.common.web.interceptor;
 
-import com.sia.common.core.enum.ResultCodeEnum;
+import com.sia.common.core.enums.ResultCodeEnum;
 import com.sia.common.core.exception.BaseException;
 import com.sia.common.security.jwt.JwtProperties;
 import com.sia.common.security.jwt.JwtUtil;

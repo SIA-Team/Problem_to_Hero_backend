@@ -1,4 +1,4 @@
-package com.sia.common.core.enum;
+package com.sia.common.core.enums;
 
 import lombok.Getter;
 

@@ -1,6 +1,6 @@
 package com.sia.common.web.exception;
 
-import com.sia.common.core.enum.ResultCodeEnum;
+import com.sia.common.core.enums.ResultCodeEnum;
 import com.sia.common.core.exception.BaseException;
 import com.sia.common.web.result.Result;
 import jakarta.validation.ConstraintViolation;

@@ -1,6 +1,6 @@
 package com.sia.common.core.exception;
 
-import com.sia.common.core.enum.ResultCodeEnum;
+import com.sia.common.core.enums.ResultCodeEnum;
 
 /**
  * 系统异常类
