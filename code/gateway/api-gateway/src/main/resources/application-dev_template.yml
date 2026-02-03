@@ -1,0 +1,76 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        # 用户服务路由
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/api/user/**
+          filters:
+            - StripPrefix=1
+        # 内容服务路由
+        - id: content-service
+          uri: lb://content-service
+          predicates:
+            - Path=/api/content/**
+          filters:
+            - StripPrefix=1
+        # 活动服务路由
+        - id: activity-service
+          uri: lb://activity-service
+          predicates:
+            - Path=/api/activity/**
+          filters:
+            - StripPrefix=1
+        # 钱包服务路由
+        - id: wallet-service
+          uri: lb://wallet-service
+          predicates:
+            - Path=/api/wallet/**
+          filters:
+            - StripPrefix=1
+        # 搜索服务路由
+        - id: search-service
+          uri: lb://search-service
+          predicates:
+            - Path=/api/search/**
+          filters:
+            - StripPrefix=1
+        # 通知服务路由
+        - id: notify-service
+          uri: lb://notify-service
+          predicates:
+            - Path=/api/notify/**
+          filters:
+            - StripPrefix=1
+        # 互动服务路由
+        - id: interaction-service
+          uri: lb://interaction-service
+          predicates:
+            - Path=/api/interaction/**
+          filters:
+            - StripPrefix=1
+
+  # Redis配置
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      password: ${REDIS_PASSWORD:}
+      database: 0
+      timeout: 3000ms
+      lettuce:
+        pool:
+          max-active: 8
+          max-idle: 8
+          min-idle: 0
+
+# JWT配置（继承common-security的配置）
+sia:
+  jwt:
+    secret: ${JWT_SECRET:your-jwt-secret-key-here}
+    expiration: ${JWT_EXPIRATION:86400000}
+    refresh-expiration: ${JWT_REFRESH_EXPIRATION:604800000}
+    token-prefix: ${JWT_TOKEN_PREFIX:Bearer }
+    token-header: ${JWT_TOKEN_HEADER:Authorization}

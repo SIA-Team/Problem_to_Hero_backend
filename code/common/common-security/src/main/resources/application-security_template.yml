@@ -1,0 +1,15 @@
+# JWT安全配置
+# 注意：此文件为模板文件，实际使用时请复制为 application-security.yml 并修改敏感信息
+# 生产环境请使用环境变量配置，不要使用默认值
+sia:
+  jwt:
+    # JWT密钥（生产环境请使用环境变量配置，不要使用默认值）
+    secret: ${JWT_SECRET:your-jwt-secret-key-here}
+    # Token过期时间（毫秒），默认24小时
+    expiration: ${JWT_EXPIRATION:86400000}
+    # Refresh Token过期时间（毫秒），默认7天
+    refresh-expiration: ${JWT_REFRESH_EXPIRATION:604800000}
+    # Token前缀
+    token-prefix: ${JWT_TOKEN_PREFIX:Bearer }
+    # Token请求头名称
+    token-header: ${JWT_TOKEN_HEADER:Authorization}
