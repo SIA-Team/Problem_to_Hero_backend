@@ -47,3 +47,6 @@ application-*.local.yml
 *.bak
 *.swp
 *~
+
+# 个人工作日报和周报
+reports/

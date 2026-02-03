@@ -1,0 +1,6 @@
+spring:
+  # Elasticsearch配置
+  elasticsearch:
+    uris: http://localhost:9200
+    username: 
+    password: 

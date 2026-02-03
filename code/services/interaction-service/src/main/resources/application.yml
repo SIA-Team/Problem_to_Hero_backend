@@ -1,0 +1,20 @@
+server:
+  port: 8087
+
+spring:
+  application:
+    name: interaction-service
+  profiles:
+    active: dev
+
+# Actuator配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+# 日志配置
+logging:
+  level:
+    com.sia.interaction: DEBUG

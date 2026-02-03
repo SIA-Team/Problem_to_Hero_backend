@@ -1,0 +1,30 @@
+# MyBatis-Plus配置
+mybatis-plus:
+  # 配置扫描mapper.xml文件路径
+  mapper-locations: classpath*:mapper/**/*Mapper.xml
+  # 配置实体类包路径
+  type-aliases-package: com.sia.**.entity
+  # 配置MyBatis日志
+  configuration:
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+    # 开启驼峰命名转换
+    map-underscore-to-camel-case: true
+    # 缓存配置
+    cache-enabled: true
+    # 懒加载配置
+    lazy-loading-enabled: false
+    aggressive-lazy-loading: false
+  # 全局配置
+  global-config:
+    # 数据库配置
+    db-config:
+      # 主键类型：AUTO(数据库自增)、NONE(无状态)、INPUT(手动输入)、ASSIGN_ID(雪花算法)、ASSIGN_UUID(UUID)
+      id-type: ASSIGN_ID
+      # 逻辑删除字段名
+      logic-delete-field: deleted
+      # 逻辑删除值（已删除）
+      logic-delete-value: 1
+      # 逻辑未删除值（未删除）
+      logic-not-delete-value: 0
+    # 是否控制台打印banner
+    banner: false
