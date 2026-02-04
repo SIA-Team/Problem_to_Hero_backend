@@ -1,5 +1,8 @@
--- 创建数据库
+-- 创建业务数据库
 CREATE DATABASE IF NOT EXISTS problem_to_hero DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- 创建 Nacos 配置数据库
+CREATE DATABASE IF NOT EXISTS nacos_config DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 USE problem_to_hero;
 

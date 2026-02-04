@@ -8,7 +8,10 @@ import org.springframework.context.annotation.Configuration;
 /**
  * 网关配置类
  * 配置路由规则
- *
+ * 
+ * 注意：路由配置主要在 application-dev_template.yml 中通过配置文件方式配置
+ * 此处的 Java 配置作为备用方案，如果配置文件中的路由配置不生效，可以使用此配置
+ * 
  * @author sia
  * @date 2026/02/02
  */
@@ -16,12 +19,15 @@ import org.springframework.context.annotation.Configuration;
 public class GatewayConfig {
 
     /**
-     * 路由配置
-     *
+     * 路由配置（备用方案）
+     * 
+     * 主要路由配置在 application-dev_template.yml 中
+     * 启用服务发现后，网关会自动从 Nacos 发现服务并路由
+     * 
      * @param builder RouteLocatorBuilder
      * @return RouteLocator
      */
-    @Bean
+    // @Bean  // 注释掉，使用配置文件中的路由配置
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
                 // 用户服务路由

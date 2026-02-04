@@ -7,10 +7,17 @@ spring:
   profiles:
     active: dev
   cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_SERVER_ADDR:localhost:8848}
+        namespace: ${NACOS_NAMESPACE:}
+        group: ${NACOS_GROUP:DEFAULT_GROUP}
+        enabled: true
     gateway:
       discovery:
         locator:
-          enabled: false # 禁用自动发现路由
+          enabled: true # 启用服务发现路由
+          lower-case-service-id: true
       globalcors:
         cors-configurations:
           '[/**]':

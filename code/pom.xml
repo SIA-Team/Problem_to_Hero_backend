@@ -29,6 +29,10 @@
         <spring-cloud-openfeign.version>5.0.1</spring-cloud-openfeign.version>
         <spring-cloud-config.version>4.0.9</spring-cloud-config.version>
         <micrometer-tracing.version>1.2.3</micrometer-tracing.version>
+        
+        <!-- Nacos 版本 -->
+        <spring-cloud-alibaba.version>2023.0.1.1</spring-cloud-alibaba.version>
+        <nacos.version>2.3.0</nacos.version>
 
         <!-- 数据库相关版本 -->
         <mysql.version>8.0.33</mysql.version>
@@ -178,6 +182,15 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-config</artifactId>
                 <version>${spring-cloud-config.version}</version>
+            </dependency>
+
+            <!-- Spring Cloud Alibaba BOM (包含 Nacos) -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
 
             <!-- Micrometer Tracing -->

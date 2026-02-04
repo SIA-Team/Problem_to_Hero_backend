@@ -1,4 +1,13 @@
 spring:
+  # Nacos 服务注册配置
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_SERVER_ADDR:localhost:8848}
+        namespace: ${NACOS_NAMESPACE:}
+        group: ${NACOS_GROUP:DEFAULT_GROUP}
+        enabled: true
+
   # 数据源配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
