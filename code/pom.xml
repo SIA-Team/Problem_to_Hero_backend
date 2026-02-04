@@ -26,12 +26,12 @@
 
         <!-- 微服务组件版本 -->
         <spring-cloud-gateway.version>4.0.9</spring-cloud-gateway.version>
-        <spring-cloud-openfeign.version>4.0.9</spring-cloud-openfeign.version>
+        <spring-cloud-openfeign.version>5.0.1</spring-cloud-openfeign.version>
         <spring-cloud-config.version>4.0.9</spring-cloud-config.version>
         <micrometer-tracing.version>1.2.3</micrometer-tracing.version>
 
         <!-- 数据库相关版本 -->
-        <mysql.version>8.0.35</mysql.version>
+        <mysql.version>8.0.33</mysql.version>
         <mybatis-plus.version>3.5.5</mybatis-plus.version>
         <hikaricp.version>5.1.0</hikaricp.version>
 
@@ -77,6 +77,67 @@
         <module>services/notify-service</module>
         <module>services/interaction-service</module>
     </modules>
+
+    <repositories>
+        <repository>
+            <id>aliyunmaven</id>
+            <name>Aliyun Maven</name>
+            <url>https://maven.aliyun.com/repository/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>central</id>
+            <name>Maven Central</name>
+            <url>https://repo1.maven.org/maven2</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>aliyunmaven</id>
+            <name>Aliyun Maven</name>
+            <url>https://maven.aliyun.com/repository/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+            <id>central</id>
+            <name>Maven Central</name>
+            <url>https://repo1.maven.org/maven2</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 
     <dependencyManagement>
         <dependencies>
@@ -235,6 +296,16 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <!-- 所有子模块共享的依赖 -->
+    <dependencies>
+        <!-- Lombok (所有模块都需要) -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
     <build>
         <pluginManagement>

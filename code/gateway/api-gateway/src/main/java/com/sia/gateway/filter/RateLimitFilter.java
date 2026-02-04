@@ -50,8 +50,9 @@ public class RateLimitFilter implements GlobalFilter, Ordered {
 
         return redisTemplate.execute(RedisScript.of(luaScript, Long.class),
                         Collections.singletonList(limitKey),
-                        Collections.singletonList(String.valueOf(WINDOW.getSeconds())))
+                        Collections.singletonList(String.valueOf(WINDOW.getSeconds()))
                 )
+                .next() // 将 Flux 转换为 Mono，取第一个元素
                 .flatMap(count -> {
                     if (count > RATE_LIMIT) {
                         log.warn("限流触发: key={}, count={}", key, count);

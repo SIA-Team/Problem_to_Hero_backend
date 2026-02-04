@@ -4,6 +4,7 @@ import com.sia.common.core.enums.ResultCodeEnum;
 import com.sia.common.core.exception.BaseException;
 import com.sia.common.security.jwt.JwtProperties;
 import com.sia.common.security.jwt.JwtUtil;
+import com.sia.common.web.annotation.NoAuth;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
