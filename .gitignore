@@ -63,3 +63,20 @@ Thumbs.db
 # 个人工作日报和周报
 reports/
 /.cursor
+/code/services/activity-service/src/main/resources/application-dev.yml
+/code/services/activity-service/src/main/resources/application.yml
+/code/services/content-service/src/main/resources/application-dev.yml
+/code/services/content-service/src/main/resources/application.yml
+/code/services/interaction-service/src/main/resources/application-dev.yml
+/code/services/interaction-service/src/main/resources/application.yml
+/code/services/notify-service/src/main/resources/application-dev.yml
+/code/services/notify-service/src/main/resources/application.yml
+/code/services/search-service/src/main/resources/application-dev.yml
+/code/services/search-service/src/main/resources/application.yml
+/code/services/user-service/src/main/resources/application-dev.yml
+/code/services/user-service/src/main/resources/application.yml
+/code/services/wallet-service/src/main/resources/application-dev.yml
+/code/services/wallet-service/src/main/resources/application.yml
+/code/gateway/api-gateway/src/main/resources/application-dev.yml
+/code/gateway/api-gateway/src/main/resources/application.yml
+/code/common/common-security/src/main/resources/application-security.yml
