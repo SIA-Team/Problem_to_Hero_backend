@@ -3,16 +3,16 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>com.ruoyi</groupId>
-        <artifactId>ruoyi-common</artifactId>
+        <groupId>com.qahero</groupId>
+        <artifactId>qa-hero-common</artifactId>
         <version>3.6.7</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ruoyi-common-seata</artifactId>
+    <artifactId>qa-hero-common-seata</artifactId>
 
     <description>
-        ruoyi-common-seata分布式事务
+        qa-hero-common-seata分布式事务
     </description>
 
     <dependencies>

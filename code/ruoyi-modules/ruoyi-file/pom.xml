@@ -3,16 +3,16 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>com.ruoyi</groupId>
-        <artifactId>ruoyi-modules</artifactId>
+        <groupId>com.qahero</groupId>
+        <artifactId>qa-hero-modules</artifactId>
         <version>3.6.7</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ruoyi-modules-file</artifactId>
+    <artifactId>qa-hero-modules-file</artifactId>
 
     <description>
-        ruoyi-modules-file文件服务
+        qa-hero-modules-file文件服务
     </description>
 
     <dependencies>
@@ -54,10 +54,10 @@
             <version>${minio.version}</version>
         </dependency>
         
-        <!-- RuoYi Api System -->
+        <!-- QA Hero Api System -->
         <dependency>
-            <groupId>com.ruoyi</groupId>
-            <artifactId>ruoyi-api-system</artifactId>
+            <groupId>com.qahero</groupId>
+            <artifactId>qa-hero-api-system</artifactId>
         </dependency>
         
     </dependencies>

@@ -2,16 +2,16 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>com.ruoyi</groupId>
-        <artifactId>ruoyi</artifactId>
+        <groupId>com.qahero</groupId>
+        <artifactId>qa-hero</artifactId>
         <version>3.6.7</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     
-    <artifactId>ruoyi-auth</artifactId>
+    <artifactId>qa-hero-auth</artifactId>
 	
     <description>
-        ruoyi-auth认证授权中心
+        qa-hero-auth认证授权中心
     </description>
     
     <dependencies>
@@ -46,10 +46,10 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 		
-        <!-- RuoYi Common Security-->
+        <!-- QA Hero Common Security-->
         <dependency>
-            <groupId>com.ruoyi</groupId>
-            <artifactId>ruoyi-common-security</artifactId>
+            <groupId>com.qahero</groupId>
+            <artifactId>qa-hero-common-security</artifactId>
         </dependency>
         
     </dependencies>

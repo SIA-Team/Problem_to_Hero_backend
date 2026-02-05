@@ -3,24 +3,24 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>com.ruoyi</groupId>
-        <artifactId>ruoyi-api</artifactId>
+        <groupId>com.qahero</groupId>
+        <artifactId>qa-hero-api</artifactId>
         <version>3.6.7</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     
-    <artifactId>ruoyi-api-system</artifactId>
+    <artifactId>qa-hero-api-system</artifactId>
 
     <description>
-        ruoyi-api-system系统接口模块
+        qa-hero-api-system系统接口模块
     </description>
 
     <dependencies>
 		
-        <!-- RuoYi Common Core-->
+        <!-- QA Hero Common Core-->
         <dependency>
-            <groupId>com.ruoyi</groupId>
-            <artifactId>ruoyi-common-core</artifactId>
+            <groupId>com.qahero</groupId>
+            <artifactId>qa-hero-common-core</artifactId>
         </dependency>
         
     </dependencies>

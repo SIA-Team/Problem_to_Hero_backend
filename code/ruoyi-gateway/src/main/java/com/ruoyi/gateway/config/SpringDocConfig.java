@@ -51,7 +51,7 @@ class SwaggerDocRegister extends Subscriber<InstancesChangeEvent>
     @Autowired
     private DiscoveryClient discoveryClient;
 
-    private final static String[] EXCLUDE_ROUTES = new String[] { "ruoyi-gateway", "ruoyi-auth", "ruoyi-file", "ruoyi-monitor" };
+    private final static String[] EXCLUDE_ROUTES = new String[] { "qa-hero-gateway", "qa-hero-auth", "qa-hero-file", "qa-hero-monitor" };
 
     public SwaggerDocRegister(SwaggerUiConfigProperties swaggerUiConfigProperties, DiscoveryClient discoveryClient)
     {

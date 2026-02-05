@@ -3,16 +3,16 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>com.ruoyi</groupId>
-        <artifactId>ruoyi-modules</artifactId>
+        <groupId>com.qahero</groupId>
+        <artifactId>qa-hero-modules</artifactId>
         <version>3.6.7</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ruoyi-modules-job</artifactId>
+    <artifactId>qa-hero-modules-job</artifactId>
 
     <description>
-        ruoyi-modules-job定时任务
+        qa-hero-modules-job定时任务
     </description>
 
     <dependencies>
@@ -59,16 +59,16 @@
             <artifactId>mysql-connector-j</artifactId>
         </dependency>
         
-        <!-- RuoYi Common Log -->
+        <!-- QA Hero Common Log -->
         <dependency>
-            <groupId>com.ruoyi</groupId>
-            <artifactId>ruoyi-common-log</artifactId>
+            <groupId>com.qahero</groupId>
+            <artifactId>qa-hero-common-log</artifactId>
         </dependency>
         
-        <!-- RuoYi Common Swagger -->
+        <!-- QA Hero Common Swagger -->
         <dependency>
-            <groupId>com.ruoyi</groupId>
-            <artifactId>ruoyi-common-swagger</artifactId>
+            <groupId>com.qahero</groupId>
+            <artifactId>qa-hero-common-swagger</artifactId>
         </dependency>
         
     </dependencies>
