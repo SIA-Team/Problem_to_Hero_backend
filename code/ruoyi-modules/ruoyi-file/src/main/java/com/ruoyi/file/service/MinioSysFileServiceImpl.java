@@ -1,6 +1,7 @@
 package com.ruoyi.file.service;
 
 import java.io.InputStream;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -18,8 +19,7 @@ import io.minio.RemoveObjectArgs;
  * @author ruoyi
  */
 @Service
-public class MinioSysFileServiceImpl implements ISysFileService
-{
+public class MinioSysFileServiceImpl implements ISysFileService {
     @Autowired
     private MinioConfig minioConfig;
 
@@ -34,11 +34,9 @@ public class MinioSysFileServiceImpl implements ISysFileService
      * @throws Exception
      */
     @Override
-    public String uploadFile(MultipartFile file) throws Exception
-    {
+    public String uploadFile(MultipartFile file) throws Exception {
         InputStream inputStream = null;
-        try
-        {
+        try {
             String fileName = FileUploadUtils.extractFilename(file);
             inputStream = file.getInputStream();
             PutObjectArgs args = PutObjectArgs.builder()
@@ -49,33 +47,25 @@ public class MinioSysFileServiceImpl implements ISysFileService
                     .build();
             client.putObject(args);
             return minioConfig.getUrl() + "/" + minioConfig.getBucketName() + "/" + fileName;
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             throw new RuntimeException("Minio Failed to upload file", e);
-        }
-        finally
-        {
+        } finally {
             IoUtils.closeQuietly(inputStream);
         }
     }
 
     /**
      * Minio文件删除接口
-     * 
+     *
      * @param fileUrl 文件访问URL
      * @throws Exception
      */
     @Override
-    public void deleteFile(String fileUrl) throws Exception
-    {
-        try
-        {
+    public void deleteFile(String fileUrl) throws Exception {
+        try {
             String minioFile = StringUtils.substringAfter(fileUrl, minioConfig.getBucketName());
             client.removeObject(RemoveObjectArgs.builder().bucket(minioConfig.getBucketName()).object(minioFile).build());
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             throw new RuntimeException("Minio Failed to delete file", e);
         }
     }

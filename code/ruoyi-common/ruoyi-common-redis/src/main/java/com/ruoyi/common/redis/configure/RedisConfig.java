@@ -12,19 +12,17 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 /**
  * redis配置
- * 
+ *
  * @author ruoyi
  */
 @Configuration
 @EnableCaching
 @AutoConfigureBefore(RedisAutoConfiguration.class)
 @SuppressWarnings("deprecation")
-public class RedisConfig extends CachingConfigurerSupport
-{
+public class RedisConfig extends CachingConfigurerSupport {
     @Bean
-    @SuppressWarnings(value = { "unchecked", "rawtypes" })
-    public RedisTemplate<Object, Object> redisTemplate(RedisConnectionFactory connectionFactory)
-    {
+    @SuppressWarnings(value = {"unchecked", "rawtypes"})
+    public RedisTemplate<Object, Object> redisTemplate(RedisConnectionFactory connectionFactory) {
         RedisTemplate<Object, Object> template = new RedisTemplate<>();
         template.setConnectionFactory(connectionFactory);
 

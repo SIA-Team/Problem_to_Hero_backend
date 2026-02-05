@@ -2,6 +2,7 @@ package com.ruoyi.file.config;
 
 import java.util.HashMap;
 import java.util.Map;
+
 import jakarta.servlet.DispatcherType;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -16,22 +17,20 @@ import com.ruoyi.file.filter.RefererFilter;
  * @author ruoyi
  */
 @Configuration
-public class FilterConfig
-{
+public class FilterConfig {
     /**
      * 资源映射路径 前缀
      */
     @Value("${file.prefix}")
     public String localFilePrefix;
-    
+
     @Value("${referer.allowed-domains}")
     private String allowedDomains;
-    
+
     @SuppressWarnings({"rawtypes", "unchecked"})
     @Bean
     @ConditionalOnProperty(value = "referer.enabled", havingValue = "true")
-    public FilterRegistrationBean refererFilterRegistration()
-    {
+    public FilterRegistrationBean refererFilterRegistration() {
         FilterRegistrationBean registration = new FilterRegistrationBean();
         registration.setDispatcherTypes(DispatcherType.REQUEST);
         registration.setFilter(new RefererFilter());

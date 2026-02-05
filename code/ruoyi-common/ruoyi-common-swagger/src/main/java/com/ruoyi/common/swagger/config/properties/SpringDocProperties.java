@@ -11,8 +11,7 @@ import io.swagger.v3.oas.models.info.License;
  * @author ruoyi
  */
 @ConfigurationProperties(prefix = "springdoc")
-public class SpringDocProperties
-{
+public class SpringDocProperties {
     /**
      * 网关
      */
@@ -30,11 +29,10 @@ public class SpringDocProperties
      * </p>
      *
      * @see io.swagger.v3.oas.models.info.Info
-     *
+     * <p>
      * 为了 springboot 自动生产配置提示信息，所以这里复制一个类出来
      */
-    public static class InfoProperties
-    {
+    public static class InfoProperties {
         /**
          * 标题
          */
@@ -62,74 +60,60 @@ public class SpringDocProperties
          */
         private String version = null;
 
-        public String getTitle()
-        {
+        public String getTitle() {
             return title;
         }
 
-        public void setTitle(String title)
-        {
+        public void setTitle(String title) {
             this.title = title;
         }
 
-        public String getDescription()
-        {
+        public String getDescription() {
             return description;
         }
 
-        public void setDescription(String description)
-        {
+        public void setDescription(String description) {
             this.description = description;
         }
 
-        public Contact getContact()
-        {
+        public Contact getContact() {
             return contact;
         }
 
-        public void setContact(Contact contact)
-        {
+        public void setContact(Contact contact) {
             this.contact = contact;
         }
 
-        public License getLicense()
-        {
+        public License getLicense() {
             return license;
         }
 
-        public void setLicense(License license)
-        {
+        public void setLicense(License license) {
             this.license = license;
         }
 
-        public String getVersion()
-        {
+        public String getVersion() {
             return version;
         }
 
-        public void setVersion(String version)
-        {
+        public void setVersion(String version) {
             this.version = version;
         }
     }
 
-    public String getGatewayUrl()
-    {
+    public String getGatewayUrl() {
         return gatewayUrl;
     }
 
-    public void setGatewayUrl(String gatewayUrl)
-    {
+    public void setGatewayUrl(String gatewayUrl) {
         this.gatewayUrl = gatewayUrl;
     }
 
-    public InfoProperties getInfo()
-    {
+    public InfoProperties getInfo() {
         return info;
     }
 
-    public void setInfo(InfoProperties info)
-    {
+    public void setInfo(InfoProperties info) {
         this.info = info;
     }
 }
