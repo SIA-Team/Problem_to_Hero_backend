@@ -2,21 +2,21 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>com.ruoyi</groupId>
-        <artifactId>ruoyi</artifactId>
+        <groupId>com.qahero</groupId>
+        <artifactId>qa-hero</artifactId>
         <version>3.6.7</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <modules>
-        <module>ruoyi-api-system</module>
+        <module>qa-hero-api-system</module>
     </modules>
 
-    <artifactId>ruoyi-api</artifactId>
+    <artifactId>qa-hero-api</artifactId>
     <packaging>pom</packaging>
 
     <description>
-        ruoyi-api系统接口
+        qa-hero-api系统接口
     </description>
 
 </project>
