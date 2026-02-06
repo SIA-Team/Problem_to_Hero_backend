@@ -1,0 +1,2 @@
+com.sia.common.log.service.AsyncLogService
+com.sia.common.log.aspect.LogAspect

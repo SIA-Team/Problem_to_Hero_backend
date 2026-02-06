@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.sia</groupId>
+        <artifactId>qa-hero</artifactId>
+        <version>3.6.7</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <modules>
+        <module>qa-hero-system</module>
+        <module>qa-hero-gen</module>
+        <module>qa-hero-job</module>
+        <module>qa-hero-file</module>
+        <module>qa-hero-auth-app</module>
+        <module>qa-hero-content</module>
+        <module>qa-hero-activity</module>
+        <module>qa-hero-wallet</module>
+    </modules>
+
+    <artifactId>qa-hero-modules</artifactId>
+    <packaging>pom</packaging>
+
+    <description>
+        qa-hero-modules业务模块
+    </description>
+
+</project>

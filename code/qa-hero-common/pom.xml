@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.sia</groupId>
+        <artifactId>qa-hero</artifactId>
+        <version>3.6.7</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <modules>
+        <module>qa-hero-common-log</module>
+        <module>qa-hero-common-core</module>
+        <module>qa-hero-common-redis</module>
+        <module>qa-hero-common-seata</module>
+        <module>qa-hero-common-swagger</module>
+        <module>qa-hero-common-security</module>
+        <module>qa-hero-common-sensitive</module>
+        <module>qa-hero-common-datascope</module>
+        <module>qa-hero-common-datasource</module>
+    </modules>
+
+    <artifactId>qa-hero-common</artifactId>
+    <packaging>pom</packaging>
+
+    <description>
+        qa-hero-common通用模块
+    </description>
+
+</project>
