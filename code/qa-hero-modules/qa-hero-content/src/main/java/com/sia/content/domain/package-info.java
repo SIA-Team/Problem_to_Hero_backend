@@ -1,5 +1,4 @@
 /**
- * 内容服务 - 实体类
- * 对应数据库表
+ * 内容模块 - 实体层
  */
 package com.sia.content.domain;

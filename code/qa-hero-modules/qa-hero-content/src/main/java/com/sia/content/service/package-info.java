@@ -1,5 +1,4 @@
 /**
- * 内容服务 - Service层
- * 负责业务逻辑处理
+ * 内容模块 - 服务层
  */
 package com.sia.content.service;

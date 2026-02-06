@@ -1,4 +1,4 @@
 /**
- * 钱包服务 - 实体类
+ * 钱包模块 - 实体层
  */
 package com.sia.wallet.domain;

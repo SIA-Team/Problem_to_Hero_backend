@@ -10,7 +10,7 @@
 
     <name>qa-hero</name>
     <url>http://www.qa-hero.vip</url>
-    <description>PROBLEM TO HERO</description>
+    <description>PROBLEM TO HERO SYSTEM</description>
 
     <properties>
         <qa-hero.version>3.6.7</qa-hero.version>

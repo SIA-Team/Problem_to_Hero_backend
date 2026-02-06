@@ -1,5 +1,4 @@
 /**
- * 内容服务 - Controller层
- * 负责处理HTTP请求，参数验证
+ * 内容模块 - 控制层
  */
 package com.sia.content.controller;

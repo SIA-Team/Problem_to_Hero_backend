@@ -1,4 +1,4 @@
 /**
- * 活动服务 - Service层
+ * 活动模块 - 服务层
  */
 package com.sia.activity.service;

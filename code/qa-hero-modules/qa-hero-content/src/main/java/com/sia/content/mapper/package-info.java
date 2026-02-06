@@ -1,5 +1,4 @@
 /**
- * 内容服务 - Mapper层
- * 负责数据库操作
+ * 内容模块 - 数据访问层
  */
 package com.sia.content.mapper;

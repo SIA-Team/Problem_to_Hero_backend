@@ -13,7 +13,7 @@
         <module>qa-hero-gen</module>
         <module>qa-hero-job</module>
         <module>qa-hero-file</module>
-        <module>qa-hero-auth-app</module>
+        <module>qa-hero-user</module>
         <module>qa-hero-content</module>
         <module>qa-hero-activity</module>
         <module>qa-hero-wallet</module>

@@ -1,4 +1,4 @@
 /**
- * 钱包服务 - Mapper层
+ * 钱包模块 - 数据访问层
  */
 package com.sia.wallet.mapper;
